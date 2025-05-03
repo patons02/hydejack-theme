@@ -34,9 +34,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install dependencies
-          run: |
-            sudo apt-get update
-            sudo apt-get install -y git curl libssl-dev libreadline-dev zlib1g-dev build-essential
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git curl libssl-dev libreadline-dev zlib1g-dev build-essential
       - name: Install ruby-build
         run: |
           git clone https://github.com/rbenv/ruby-build.git
